@@ -1,5 +1,5 @@
 
- .main{ 
+ .{ 
     margin: 0;
     padding: 0;
     font-family: Centuru Gothic;
@@ -81,8 +81,9 @@ ul li.active a{
 }
 p{
     position: absolute;
+    text-align: center;
     top:50%;
-    left:30%;
+    left:50%;
     transform:translate (-50%,-50%);
     color: #fff;
     font: 25px Georgia, serif;
@@ -129,4 +130,31 @@ p{
     100%{
         background-image: url(../b4.jpg);
     }
+}
+.sub-menu-1{
+    display: none;
+}
+ul li:hover .sub-menu-1
+{
+    display: block;
+    position: relative;
+    background-color:reb(0,100,0);
+    margin-top: 15px;
+    /* margin-left: -15px;
+    padding: 5px 30px; */
+    border: 1px solid transparent;
+    right: 20px;
+    transition: 0.6s ease;
+}
+ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted reb(0,100,0);
+    background: transparent;
+    border-radius: 0;
+     text-align: left;
 }
